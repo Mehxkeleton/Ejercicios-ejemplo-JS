@@ -1,0 +1,17 @@
+
+const readline = require('readline');
+const r1 = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+});
+console.log("introduce un numero y se mostraran y contaran los multiplos de 3 entre 1 y el numero");
+r1.on('line', (input)=>{
+	let total=0;
+	for (let i = 1; i<=input; i++){
+		if(i%3==0){
+			console.log(`${i} es multiplo de 3`);
+			total++;
+		}
+	}
+	console.log(`hay ${total} numeros multiplos de 3`);
+});
