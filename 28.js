@@ -1,6 +1,7 @@
-let moneda = Math.random();
-if(moneda>=0.5){
-  console.log("cara");
+//28
+
+if(Math.random()>0.5){
+	console.log("Cara");
 } else {
-  console.log("cruz");
+	console.log("Cruz");
 }
